@@ -28,10 +28,19 @@ public:
 
 Tabla::Tabla(std::string nombre){
     this->identificador = nombre;
+    this->table = std::vector<Tupla::Tupla>;
 }
 
 void Tabla::insert(Tupla::Tupla equis){
     this->table.append(equis);
+}
+
+void Tabla::delete(int index)){
+
+}
+
+std::string Tabla::getname(){
+    return this->identificador;
 }
 
 int Tabla::getIdx(){
